@@ -14,6 +14,7 @@ endif()
 # Setup boost
 find_package(Boost REQUIRED COMPONENTS serialization)
 include_directories(${Boost_INCLUDE_DIRS})
+set(Boost_USE_STATIC_LIBS ON)
 
 # Setup bearlibterminal
 include_directories("3rdparty/bearlibterminal/include")
